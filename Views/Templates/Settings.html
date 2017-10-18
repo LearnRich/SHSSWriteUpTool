@@ -1,0 +1,37 @@
+<div class="container">
+  <h2>
+    Update Settings
+  </h2>
+  <br/><br/>
+  <form id="update-form">
+    
+  <div class="form-group label-static is-empty">
+    <label for="username" class="control-label" type="text">Username</label>
+    <input id="username" name="username" class="form-control" type="text" value="$session['user']['username']" 
+           disabled placeholder="Choose a username"/>
+  </div>
+  <div class="form-group label-static is-empty">
+    <label for="name" class="control-label" type="text">Full Name</label>
+    <input id="name" name="name" class="form-control" type="text" placeholder="Please enter your name"/>
+  </div>
+
+  <div class="form-group label-static is-empty">
+    <label for="email" class="control-label" type="text">Email Address</label>
+    <input id="email" name="email" class="form-control" type="email" placeholder="Please enter your email"/>
+  </div>
+
+  <div class="form-group label-static is-empty">
+    <label for="oldpassword" class="control-label" type="text">Old Password</label>
+    <input id="oldpassword" name="oldpassword" class="form-control" type="password" placeholder="Please enter a password"/>
+  </div>
+    
+  <div class="form-group label-static is-empty">
+    <label for="newpassword" class="control-label" type="text">New Password</label>
+    <input id="newpassword" name="newpassword" class="form-control" type="password" placeholder="Please enter a password"/>
+  </div>
+    
+  <button type="submit" class="btn btn-info waves-effect">Update<div class="ripple-container"></div></button>   
+    
+  </form>
+
+</div>
